@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Personal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background: linear-gradient(135deg, #3b82f6, #10b981);
+            background-attachment: fixed;
+            position: relative;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 50%),
+                        radial-gradient(circle at 70% 70%, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 50%);
+            filter: blur(10px);
+            z-index: -1;
+        }
+    </style>
+</head>
+<body class="text-gray-800 font-serif">
+    <div class="max-w-6xl w-full mx-auto p-6 bg-white shadow-lg rounded-lg relative z-10">
+        <!-- Sección principal -->
+        <div class="flex flex-col md:flex-row items-center md:items-start">
+            <!-- Avatar -->
+            <div class="mt-10 md:w-1/2 flex justify-center">
+                <img src="avatar.png" alt="Avatar" class="w-56 h-66 rounded-full border-4 border-gray-300 shadow-lg">
+            </div>
+            
+            <!-- Información personal -->
+            <div class="md:w-1/2 text-left p-6">
+                <h1 class="mt-20 text-3xl font-bold">Jonathan Esquivel Paniagua</h1>
+                <p class="text-lg text-gray-600">Lic. Mercadeo y Desarrollador FullStack Automatización de Procesos</p>
+                <div class="mt-4">
+                    <p><strong>📍 Ubicación:</strong> Alajuela, Costa Rica</p>
+                    <p><strong>📧 Email:</strong> jesqpa@gmail.com</p>
+                    <p><strong>📞 Teléfono:</strong> +506 8345 3485</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Sección de información adicional -->
+        <div class="mt-10">
+            <h2 class="text-xl font-semibold border-b pb-1">Sobre mí</h2>
+            <p class="mt-2 text-gray-700">Soy un apasionado del desarrollo web con experiencia en tecnologías modernas. Me encanta diseñar interfaces intuitivas y funcionales que puedan interactar con otros servicios en la nube, para automatización de soluciones, resolución de problemas y optimización de recursos.</p>
+        </div>
+        
+        <!-- Sección de habilidades y experiencia -->
+        <div class="mt-10">
+            <h2 class="text-xl font-semibold border-b pb-1">Habilidades</h2>
+            <ul class="mt-2 text-gray-700 list-disc list-inside">
+                <li>Desarrollo Frontend (HTML, CSS, JavaScript, React)</li>
+                <li>Diseño UI/UX con StudioCode</li>
+                <li>Desarrollo Backend con Node.js y Express</li>
+                <li>Gestión de bases de datos SQL y NoSQL</li>
+                <li>Automatización de procesos con WhatsApp API y Node.js</li>
+                <li>Desarrollo de bots de mensajería con JavaScript y Webhooks</li>
+                <li>Integración de soluciones de comunicación automatizada</li>
+		<li>Utilización de IA mediante incorporación de interfaces API</li>
+            </ul>
+        </div>
+        
+        <!-- Redes Sociales -->
+        <div class="mt-10">
+            <h2 class="text-xl font-semibold border-b pb-1">Redes Sociales</h2>
+            <div class="mt-2 flex space-x-4">
+                <a href="https://www.linkedin.com/in/jonathanesquivel/" class="text-blue-600 hover:underline">LinkedIn</a>
+                <a href="#" class="text-blue-600 hover:underline">GitHub</a>
+                <a href="#" class="text-blue-600 hover:underline">Twitter</a>
+            </div>
+        </div>
+        
+        <!-- Botón de contacto -->
+        <div class="mt-10 text-center">
+            <a href="mailto:jesqpa@gmail.com" class="px-4 py-2 bg-blue-600 text-white rounded-lg shadow-md hover:bg-blue-700">Contáctame</a>
+        </div>
+    </div>
+</body>
+</html>
